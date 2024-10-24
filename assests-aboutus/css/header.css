@@ -8,31 +8,18 @@
 
 
 :root {
-  --background-color: #ffffff;
-  /* Background color for the entire website, including individual sections */
+  --background-color: #ffffff;  
   --default-color: #212529;
-  /* Default color used for the majority of the text content across the entire website */
   --heading-color: #32353a;
-  /* Color for headings, subheadings and title throughout the website */
   --accent-color: #1e5a9a;
-
-  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --contrast-color: #ffffff;
-  /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
 }
-
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #3a3939;
-  /* The default color of the main navmenu links */
   --nav-hover-color: rgb(255 144 0);
-  /* Applied to main navmenu links when they are hovered over or active */
   --nav-dropdown-background-color: #ffffff;
-  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #3a3939;
-  /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: rgb(255 144 0);
-  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 .light-background {
@@ -61,7 +48,6 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   /* font-family: var(--default-font); */
-
 }
 
 a {
@@ -1211,13 +1197,13 @@ h6 {
   padding-block:5rem ;
   font-family: "Poppins", sans-serif;
   position: relative;
-  background:linear-gradient(to right, rgba(220, 220, 220, 0.8),rgba(243, 243, 243, 0.8)), url(../img/cloud2.jpg);
+  background:linear-gradient(to bottom, rgba(255, 255, 255, 0.84),rgb(243, 243, 243)), url(../img/cloud2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: fit-content;
 }
-.hs-heading h4 {
+.hs-heading .hs-content h4 {
   font-size: var(--heading);
   padding-block: 3rem;
   text-align: center;
@@ -1226,7 +1212,7 @@ h6 {
   position: relative;
   margin: 0 auto;
 }
-.hs-heading h4::after {
+.hs-heading .hs-content h4::after {
   content: '';
   width: 50%;
   height: 3px;
@@ -1239,15 +1225,87 @@ h6 {
 .hs-heading .hs-content{
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+}
+.hs-content h4 + p{
+  font-size: 1.4rem;
+  line-height: 1.8;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1.6rem 0;
+  text-align: center;
+  margin-top: 2rem;
 }
 .hs-heading .hs-main{
-  width: 100%;
- height: 30vh;
-  background-color: rgba(7, 58, 147, 0.67);
+  width: 90%;
+  height: 60vh;
+  background-color: rgb(245, 241, 241);
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -5%;
+  border-radius: 10px;
+  left: 50%;
+  transform: translateX(-50%);  
+  overflow: hidden;
+}
+.hs-main .row h4{
+  margin-top: 3rem;
+  padding: 2rem;
+  color: #1f1d1d;
+  font-weight: 400;
+  font-size: calc(var(--heading ) );
+  margin-bottom: 1rem;    
+  position: relative;
+}
+.hs-main .hs-content{
+  margin-top: 4rem;
+  padding: 0rem 2rem;
+  display: flex;
+ gap: 2.2rem;
+
+}
+.hs-content .hs-c_inside{
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+  padding-block: 1rem;
+  color: #202020;
+}
+.hs-count{
+  font-size: 2.8rem;
+  font-weight: 400;  
+}
+.hs-c_inside .hs-count + div{
+  font-size: 1.2rem;
+  position: relative;
+}
+.hs-c_inside .hs-count + div::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: rgba(189, 189, 189, 0.67);
+  display: block;
+  margin-top: 1rem;
+}
+.hs-main .hs{
+  position: relative;
+}
+.hs-img{
+  position: relative;
+  }
+.hs-img .hs-image{
+  position: absolute;
+  top: 8%;
+  right: 4%;
+  
+}
+.hs-image{
+  width: 100%; 
+}
+.hs-image img{  
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
@@ -1359,5 +1417,24 @@ h6 {
         filter: grayscale(0);
         scale: 1;
 
+      }
+    }
+
+    /* =========faq section========= */
+    .heading-text {
+      text-align: center;
+      width: 80%;
+      margin: auto;
+      font-weight: 600;
+    }
+    .heading-text[data-target] h4 {
+      font-size: var(--heading);
+      font-weight: 500;
+      color: rgb(46, 46, 46);
+    }
+
+    @media (max-width: 600px) {
+      .heading-text {
+        width: 90%;
       }
     }
