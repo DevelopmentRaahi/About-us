@@ -1173,18 +1173,21 @@ h6 {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgba(146, 146, 146, 0.082);
+  /* background-color: rgba(146, 146, 146, 0.082); */
   z-index: -1;
 }
 
 .ab-img_desc .ab-content {
   position: relative;
+  background-color: rgba(128, 128, 128, 0.104);
+  padding: 1rem 2rem;
+  /* width: 80%; */
 }
 
 .ab-img_desc .ab-content>p {
   font-size: 1.4rem;
   line-height: 1.7;
-  width: 75%;
+  width: 85%;
 }
 
 .ab-image img {
@@ -1225,7 +1228,7 @@ h6 {
 .hs-heading .hs-content{
   position: relative;
   width: 100%;
-  height: 90vh;
+  /* height: 90vh; */
 }
 .hs-content h4 + p{
   font-size: 1.4rem;
@@ -1237,19 +1240,13 @@ h6 {
   margin-top: 2rem;
 }
 .hs-heading .hs-main{
-  width: 90%;
-  height: 60vh;
-  background-color: rgb(245, 241, 241);
-  position: absolute;
-  bottom: -5%;
-  border-radius: 10px;
-  left: 50%;
-  transform: translateX(-50%);  
-  overflow: hidden;
+    width: 90%;
+    margin: 0 auto;  
+    position: relative;
 }
 .hs-main .row h4{
   margin-top: 3rem;
-  padding: 2rem;
+  padding-block: 2rem;
   color: #1f1d1d;
   font-weight: 400;
   font-size: calc(var(--heading ) );
@@ -1257,10 +1254,10 @@ h6 {
   position: relative;
 }
 .hs-main .hs-content{
-  margin-top: 4rem;
-  padding: 0rem 2rem;
+  margin-top: 5rem;
+  padding: 0rem 0rem;
   display: flex;
- gap: 2.2rem;
+  gap: 1rem;
 
 }
 .hs-content .hs-c_inside{
@@ -1328,15 +1325,16 @@ h6 {
 }
 .hs-main .hs{
   position: relative;
+  width: 100%;
 }
-.hs-img{
+.hs-img{  
   position: relative;
-  }
-.hs-img .hs-image{
+}
+.hs-img .hs-image{  
   position: absolute;
-  top: 8%;
-  right: 4%;
-  
+  bottom: 0;
+  right: 0; 
+ 
 }
 .hs-image{
   width: 100%; 
@@ -1348,7 +1346,28 @@ h6 {
   object-fit: cover;
 }
 
+/*========== contact details========== */
 
+#contact{
+  background-color: rgb(255, 255, 255);
+  padding-block: 5rem;
+}
+.c-title h4{
+  font-size: var(--heading);
+  font-weight: 400;
+  color: #202020;
+  text-align: center;
+}
+.c-content .c-box{
+  padding-block: 6rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  justify-content: center;
+}
+.c-box span i{
+  font-size: 4rem;
+}
 
 
 /* we are certified */
