@@ -1,30 +1,4 @@
-// let mybutton = document.getElementById("btn-back-to-top");
-// let socialIcons = document.querySelector(".whatsap_button");
 
-// // When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function () {
-//   scrollFunction();
-// };
-
-// function scrollFunction() {
-//   if (
-//     document.body.scrollTop > 20 ||
-//     document.documentElement.scrollTop > 20
-//   ) {
-//     socialIcons.style.display = "block";
-//     mybutton.style.display = "block";
-//   } else {
-//     mybutton.style.display = "none";
-//     socialIcons.style.display = "none";
-//   }
-// }
-// // When the user clicks on the button, scroll to the top of the document
-// mybutton.addEventListener("click", backToTop);
-
-// function backToTop() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
 let mybutton = document.getElementById("btn-back-to-top");
 let socialIcons = document.querySelector(".whatsap_button");
 
@@ -146,7 +120,41 @@ function backToTop() {
 
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
-  
+   const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+   function initializeSwiper() {
+  let swiperConfig = {
+    slidesPerView: window.innerWidth < 768  ? 1 : 3,
+    spaceBetween: 10,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    on: {
+      autoplayTimeLeft(s, time, progress) {
+        progressCircle.style.setProperty("--progress", 1 - progress);
+        progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+      }
+    }
+  };
+
+  new Swiper(".mySwiper", swiperConfig);
+}
+
+    initializeSwiper();
+
+    window.addEventListener("resize", function() {
+      initializeSwiper();
+    });
 
 })();
 
