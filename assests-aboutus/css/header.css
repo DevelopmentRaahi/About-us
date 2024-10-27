@@ -1809,7 +1809,8 @@ h6 {
     margin: 20px 0; 
   }
   .c-content .c-box{
-    padding: 20px;    
+    padding: 5px; 
+       
   } 
     .swiper-button-next,
     .swiper-button-prev {
