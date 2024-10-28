@@ -1738,6 +1738,7 @@ h6 {
   .ab-img_desc .ab-content>p{
     width: 100%;
     font-size: 1.2rem;
+    text-align: center;
   }
   .ab-content, .ab-image{
     margin: 0 auto;
