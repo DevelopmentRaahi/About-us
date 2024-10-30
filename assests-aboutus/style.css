@@ -2683,14 +2683,7 @@ line-height:normal;
 
 /* timeline */
 
-.t-box{
 
-		box-sizing: border-box;
-		background: #c5c7ce;
-		padding-top: 1px;
-		padding-bottom: 1px;
-	
-}
 
 .timeline{
     position: relative;
@@ -2734,7 +2727,7 @@ line-height:normal;
 
 .text-box{
     padding: 20px 30px;
-    background: #fff;
+    background: #d0e9ef;
     position: relative;
     border-radius: 6px;
     font-size: 15px;
@@ -2762,7 +2755,7 @@ line-height:normal;
     position: absolute;
     width: 5px;
     height: 100%;
-    background: #f61f1f;
+    background: #d0e9ef;
     top: 0;
     left: 50%;
     margin-left: -3px;
@@ -2792,7 +2785,7 @@ line-height:normal;
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 15px solid #fff;
+    border-left: 15px solid #d0e9ef;
     right: -15px;
 }
 
@@ -2804,7 +2797,7 @@ line-height:normal;
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid #fff;
+    border-right: 15px solid #d0e9ef;
     left: -15px;
 }
 
@@ -2830,7 +2823,7 @@ line-height:normal;
             left: 10px;
     }
     .left-contain-arrow, .right-contain-arrow{
-        border-right: 15px solid #fff;
+        border-right: 15px solid #bf1010;
         border-left: 0;
         left: -15px;
     }
