@@ -48,6 +48,7 @@ body {
 	padding:0;
 	font-size:14px;
 	font-family: 'Barlow Semi Condensed', sans-serif !important;
+	
 }
 ul {
 	margin:0px;
@@ -2683,16 +2684,18 @@ line-height:normal;
 /* timeline */
 
 .t-box{
-	background-color: #2e364a;
-	padding-top: 1px;
-	padding-bottom: 1px;
+
+		box-sizing: border-box;
+		background: #c5c7ce;
+		padding-top: 1px;
+		padding-bottom: 1px;
+	
 }
 
 .timeline{
     position: relative;
     max-width: 1200px;
     margin: 100px auto;
-	
 }
 
 .contain{
@@ -2729,7 +2732,6 @@ line-height:normal;
     animation-delay: 3s;
 }
 
-
 .text-box{
     padding: 20px 30px;
     background: #fff;
@@ -2760,7 +2762,7 @@ line-height:normal;
     position: absolute;
     width: 5px;
     height: 100%;
-    background-color: #fff;
+    background: #f61f1f;
     top: 0;
     left: 50%;
     margin-left: -3px;
@@ -2832,4 +2834,4 @@ line-height:normal;
         border-left: 0;
         left: -15px;
     }
-} 
+}
