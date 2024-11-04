@@ -2689,6 +2689,7 @@ line-height:normal;
     position: relative;
     max-width: 1200px;
     margin: 100px auto;
+	
 }
 
 .contain{
@@ -2823,7 +2824,7 @@ line-height:normal;
             left: 10px;
     }
     .left-contain-arrow, .right-contain-arrow{
-        border-right: 15px solid #bf1010;
+        border-right: 15px solid #d0e9ef;
         border-left: 0;
         left: -15px;
     }

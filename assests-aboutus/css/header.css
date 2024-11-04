@@ -1029,14 +1029,28 @@ h6 {
 /*====================================================
   ========== about page hero stared from here  =======*/
 #about-hero {
-  background-color: rgba(214, 214, 214, 0.276);
+ 
+    /* background-color: rgba(214, 214, 214, 0.276); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: fit-content; 
+  padding-block:5rem ; */
+
+  padding-block:5rem ;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  background:linear-gradient(to bottom, rgba(255, 255, 255, 0.84),rgb(243, 243, 243)), url(../img/about.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: fit-content;
+ 
+
 }
 
 .main-hero {
+  
   display: flex;
   justify-content: center;
   align-items: center;
