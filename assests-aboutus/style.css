@@ -2728,9 +2728,10 @@ line-height:normal;
 
 .text-box{
     padding: 20px 30px;
-    background: #d0e9ef;
+    background: #ffffff;
     position: relative;
     border-radius: 6px;
+	border: 1px solid #d0e9ef;
     font-size: 15px;
 }
 .left-contain{
@@ -2756,7 +2757,8 @@ line-height:normal;
     position: absolute;
     width: 5px;
     height: 100%;
-    background: #d0e9ef;
+    background: #e1f5f9;
+	border-radius: 5px;
     top: 0;
     left: 50%;
     margin-left: -3px;
@@ -2786,7 +2788,7 @@ line-height:normal;
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 15px solid #d0e9ef;
+    border-left: 15px solid #c1eeee82;
     right: -15px;
 }
 
@@ -2798,7 +2800,7 @@ line-height:normal;
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid #d0e9ef;
+    border-right: 15px solid #c1eeee82;
     left: -15px;
 }
 
