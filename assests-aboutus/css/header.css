@@ -1137,6 +1137,39 @@ h6 {
   object-fit: cover;
 }
 
+@media screen and (max-width: 768px){
+    .h1-content h2{
+      font-size: 3rem;
+      width: 92%;
+    }
+    .ab1-images .first-img{
+      width: 100%;
+    }
+    .ab1-content .s-content{
+      width: 80%;
+    }
+    .s-content p{
+      font-size: 1.5rem;
+    }
+    .ab1-images .second-img{
+      width: 70%;
+    }
+    .ab1-content .content-image img{
+      width: 100%;
+    }
+}
+@media  (max-width:450px){
+    .h1-content h2{
+      font-size: 2rem;
+      width: 98%;
+    }
+    .h1-content p{
+      font-size: 1.3rem;
+      width: 98%;
+    }
+}
+
+
 /*====================================================
   ========== about2 page hero stared from here  =======*/
 
