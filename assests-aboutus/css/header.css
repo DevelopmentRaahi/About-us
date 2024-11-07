@@ -1068,6 +1068,7 @@ h6 {
   text-align: center;
   padding: 2rem 0;
   color: #404040;
+  margin-bottom: 20px;
 }
 .ab1-image{
   /* background-color: rgba(255, 0, 0, 0.204); */
@@ -1114,18 +1115,19 @@ h6 {
   /* height: 100%; */
 }
 .ab1-content .s-content{ 
-  background-color:#115ed9;
-  width: 50%;
-  padding: 1rem;  
+  background-color:#232323;
+  width: 60%;
+  padding: 2rem;  
   border-radius: 10px;  
 }
 .s-content h4{
   color: #ffffffdd;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 .s-content p{
-  font-size: 1.7rem;
-  padding: 5px 0;
+  font-size: 2.3rem;
+  padding: 5px ;
   font-weight: 300;
   color: #fff;
 }
@@ -1135,6 +1137,37 @@ h6 {
   width: 90%;
   /* height: 70%; */
   object-fit: cover;
+}
+.ab1-content {
+  position: relative;
+}
+.ab1-content figure svg{
+  position: absolute;
+  top:-5px;
+  right:20%;
+  z-index: 1; 
+  opacity: 0.1; 
+}
+@media (min-width: 768px) and (max-width: 820px){
+  .h1-content h2{
+      width: 100%;
+      font-weight: 700;
+  }
+ .ab1-images .first-img{
+      width: 100%;
+    }
+    .ab1-content .s-content{
+      width: 80%;
+    }
+    .s-content p{
+      font-size: 1.5rem;
+    }
+    .ab1-images .second-img{
+      width: 75%;
+    }
+    .ab1-content .content-image img{
+      width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px){
