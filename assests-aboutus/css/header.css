@@ -1138,13 +1138,13 @@ h6 {
   /* height: 70%; */
   object-fit: cover;
 }
-.ab1-content {
+.ab1-content  {
   position: relative;
 }
 .ab1-content figure svg{
   position: absolute;
-  top:-5px;
-  right:20%;
+  top:0px;
+  right:25%;
   z-index: 1; 
   opacity: 0.1; 
 }
@@ -1168,12 +1168,20 @@ h6 {
     .ab1-content .content-image img{
       width: 100%;
     }
+    .ab1-content figure svg{
+      top: 10%;
+      right: 0;
+    }
 }
 
 @media screen and (max-width: 768px){
     .h1-content h2{
       font-size: 3rem;
       width: 92%;
+    }
+    .ab1-content figure svg{
+      right: 0;
+    
     }
     .ab1-images .first-img{
       width: 100%;
