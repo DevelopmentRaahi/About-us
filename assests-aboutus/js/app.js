@@ -31,46 +31,6 @@
     document.documentElement.scrollTop = 0;
   }
 
-  // dropdown update
-
-  var dropDown = document.querySelector(".navmenu li ul");
-  function additem() {
-    if (dropDown) {
-      dropDown.innerHTML = `    
-              <li><a href="https://domgys.in/register-a-domain.html">Register A Domain </a>
-              </li>
-              <li><a href="https://domgys.in/shared-hosting.html">CPanel
-                  shared Hosting </a>
-              </li>
-              <li><a href="https://domgys.in/window-shared-hosting.html">Plesh
-                  Shared Hosting
-                </a>
-              </li>
-              <li><a href="https://domgys.in/wordpress-hosting.html">
-                  Wordpress
-                  Hosting</a>
-              </li>
-              <li><a href="https://domgys.in/business-hosting.html">
-                  Business hoting Sevice
-                  </a>
-              </li>
-              <li>
-                <a href="https://domgys.in/transfer-your-domain.html">Transfer
-                  Your Domain </a>
-              </li>
-              <li>
-                <a href="https://domgys.in/domain-pricing.php">Check
-                  Domain Pricing</a>
-              </li>
-              <li><a href="https://domgys.in/reseller-hosting.html"> Shared
-                  cloud Linux
-                  Hosting</a>
-              </li>
-    `;
-    }
-  }
-  dropDown && additem();
-
   // date update
   let updateDate = document.querySelector(".year");
   if (updateDate) updateDate.innerHTML = new Date().getFullYear();
